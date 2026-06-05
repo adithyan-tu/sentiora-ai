@@ -9,9 +9,7 @@ from app.core.config import settings
 def setup_logging() -> None:
     log_handler = logging.StreamHandler(sys.stdout)
 
-    formatter = JsonFormatter(
-        "%(asctime)s %(levelname)s %(name)s %(message)s"
-    )
+    formatter = JsonFormatter("%(asctime)s %(levelname)s %(name)s %(message)s")
 
     log_handler.setFormatter(formatter)
 
