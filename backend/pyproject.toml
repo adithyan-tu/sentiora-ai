@@ -1,0 +1,9 @@
+[project]
+name = "sentiora-ai-backend"
+version = "0.1.0"
+description = "Sentiora AI backend service"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["app/tests"]
