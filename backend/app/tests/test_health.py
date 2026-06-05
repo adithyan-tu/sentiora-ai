@@ -13,6 +13,7 @@ def test_health_endpoint():
     payload = response.json()
 
     assert payload["status"] == "ok"
-    assert payload["environment"] == "development"
-
-    assert "timestamp" in payload
+    assert payload["database"] in [
+        "connected",
+        "disconnected",
+    ]

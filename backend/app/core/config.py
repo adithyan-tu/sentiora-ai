@@ -30,6 +30,11 @@ class Settings(BaseSettings):
         case_sensitive=True,
         extra="ignore",
     )
+    POSTGRES_USER: str = "sentiora"
+    POSTGRES_PASSWORD: str = "sentiora_password"
+    POSTGRES_DB: str = "sentiora_db"
+    POSTGRES_HOST: str = "localhost"
+    POSTGRES_PORT: int = 5432
 
 
 @lru_cache
