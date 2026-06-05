@@ -6,6 +6,9 @@ __pycache__/
 # Environment
 .env
 
+# Pytest
+.pytest_cache/
+
 # Node
 node_modules/
 
@@ -29,3 +32,14 @@ data/processed/*
 
 # Models
 models/*
+
+# Ruff
+.ruff_cache/
+
+# Docker
+*.db
+postgres_data/
+
+# OS
+.DS_Store
+Thumbs.db
