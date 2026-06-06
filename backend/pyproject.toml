@@ -3,6 +3,10 @@ name = "sentiora-ai-backend"
 version = "0.1.0"
 description = "Sentiora AI backend service"
 requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "tenacity>=9.1.4",
+]
 
 [tool.pytest.ini_options]
 pythonpath = ["."]
@@ -22,3 +26,8 @@ select = [
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
+
+[dependency-groups]
+dev = [
+    "pytest-httpx>=0.36.2",
+]
