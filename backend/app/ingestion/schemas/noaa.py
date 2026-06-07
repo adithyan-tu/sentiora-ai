@@ -14,13 +14,16 @@ class NOAAAlertProperties(BaseModel):
     event: str | None = None
     headline: str | None = None
     description: str | None = None
+    sent: str | None = None
 
 
 class NOAAAlertFeature(BaseModel):
     id: str
     properties: NOAAAlertProperties
     geometry: dict[str, Any] | None = None
+    sent: str | None = None
 
 
 class NOAAAlertsResponse(BaseModel):
     features: list[NOAAAlertFeature]
+    sent: str | None = None
